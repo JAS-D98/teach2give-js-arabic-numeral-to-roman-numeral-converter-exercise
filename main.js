@@ -52,7 +52,7 @@ form.addEventListener("submit", (e) => {
     let output=document.querySelector('#output');
     let error=document.querySelector('#error');
     let inputValue=num.value;
-    if(inputValue>0 && inputValue<=4000000){
+    if(inputValue>=lowerLimit && inputValue<=upperLimit){
     output.textContent=`${inputValue} = ${intToRoman(num.value)}`;
     output.style.setProperty('color','green');
     }else{

@@ -51,9 +51,7 @@ form.addEventListener("submit", (e) => {
     let num = document.querySelector('#number');
     let output=document.querySelector('#output')
     let inputValue=num.value;
-    if(inputValue==""){
-    alert("Please Enter a Roman Value e.g 1, 2, 3 etc.")
-    }else if(inputValue>0 && inputValue<=4000000){
+    if(inputValue>0 && inputValue<=4000000){
     output.textContent=`${inputValue} = ${intToRoman(num.value)}`;
     output.style.setProperty('color','green');
     }else{

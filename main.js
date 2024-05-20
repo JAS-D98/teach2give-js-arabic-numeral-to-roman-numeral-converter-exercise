@@ -49,13 +49,13 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
   
     let num = document.querySelector('#number');
-    let output=document.querySelector('#output')
+    let output=document.querySelector('#output');
+    let error=document.querySelector('#error');
     let inputValue=num.value;
     if(inputValue>0 && inputValue<=4000000){
     output.textContent=`${inputValue} = ${intToRoman(num.value)}`;
     output.style.setProperty('color','green');
     }else{
-    output.textContent=`Kindly enter a value between ${lowerLimit} and ${upperLimit}`;
-    output.style.setProperty('color','red');
+    error.textContent=`Kindly enter a value between ${lowerLimit} and ${upperLimit}`;
     }
   });

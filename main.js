@@ -55,6 +55,7 @@ form.addEventListener("submit", (e) => {
     if(inputValue>=lowerLimit && inputValue<=upperLimit){
     output.textContent=`${inputValue} = ${intToRoman(num.value)}`;
     output.classList.add('.output')
+    error.textContent="";
     }else{
     error.textContent=`Kindly enter a value between ${lowerLimit} and ${upperLimit}`;
     output.textContent="";

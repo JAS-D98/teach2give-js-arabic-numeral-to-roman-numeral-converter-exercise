@@ -83,6 +83,9 @@ body {
   text-transform: uppercase;
   font-weight: 600;
 }
+.output{
+  color: green;
+}
 
 @media screen and (max-width: 31.25em) {
   .input-form {

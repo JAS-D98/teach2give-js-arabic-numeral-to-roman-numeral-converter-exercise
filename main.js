@@ -57,5 +57,6 @@ form.addEventListener("submit", (e) => {
     output.classList.add('.output')
     }else{
     error.textContent=`Kindly enter a value between ${lowerLimit} and ${upperLimit}`;
+    output.textContent="";
     }
   });

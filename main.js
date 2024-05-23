@@ -59,5 +59,8 @@ form.addEventListener("submit", (e) => {
     }else{
     error.textContent=`Kindly enter a value between ${lowerLimit} and ${upperLimit}`;
     output.textContent="";
+    setTimeout(() => {
+        error.textContent="";
+    }, 500);
     }
   });

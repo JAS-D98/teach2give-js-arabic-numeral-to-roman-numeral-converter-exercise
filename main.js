@@ -61,6 +61,6 @@ form.addEventListener("submit", (e) => {
     output.textContent="";
     setTimeout(() => {
         error.textContent="";
-    }, 500);
+    }, 000);
     }
   });
